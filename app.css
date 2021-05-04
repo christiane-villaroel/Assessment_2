@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+   
+   
+   body.container {  
+       background-image: url(images/bg-intro-desktop.png);
+       background-color: hsl(0, 100%, 74%) ;
+       height: 100vh;
+       width: 100%;
+       background-size: 100%;
+       font-size: 16px;
+       font-family: 'Poppins', sans-serif;
+       font-weight: 500;
+       color: whitesmoke;
+       display: grid;
+       gap: 10px;
+       grid-template-columns: 10% 2fr 2fr 10%;
+       grid-template-rows: 10% 4fr 10% ;
+    }
+
+    .content {
+        grid-column: 2 / 3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .create-account{
+        grid-row: 2/3;
+        grid-column: 3/ 4;
+        font-size: 16px;
+    }
+
+    h1.content {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+        padding-bottom: 10px;
+    }
+    p.content {
+        font-size: 20px;
+        font-weight: 500;
+        
+    }
+   
+
+p.subscription-bar {
+    background-color: hsl(248, 32%, 49%) ;
+    border-radius: 13px;
+    height: 80px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin: 0px;
+    box-shadow: 0px 11px 6px 1px rgba(0,0,0,0.5); 
+    word-spacing:normal;   
+}
+
+
+ 
+
+div.sign-up-form{
+    background-color: whitesmoke;
+    border-radius: 13px;
+    padding: 5px 0px 8px;
+    width: 600px; 
+    height: fit-content;
+    margin-top: 15px;
+    color: hsl(246, 25%, 77%);
+    font-family: inherit;
+    box-shadow: 0px 7px 5px 4px rgba(0,0,0,0.36);
+}
+/*input {
+    margin: 1em 2em;
+    border-radius: 6px;
+    padding: 20px 30px 0px;
+    color:hsl(249, 10%, 26%) ;
+    font-family: inherit;
+    border:1px solid hsl(246, 25%, 77%);
+    }*/
+   
+   input[type=email], input[type=text], input[type=password] {   
+        width: 95%;   
+        margin: 8px 20px;  
+        padding: 12px 20px;      
+        border: 2px solid hsl(246, 25%, 77%) ; 
+        border-radius: 8px;  
+        box-sizing: border-box; 
+        display: flex;  
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+    /*input.input-box {
+        display: flex ;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }*/
+
+    input#submit {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        margin: 8px 20px;  
+        padding: 12px 20px;    
+        background-color:hsl(154, 59%, 51%) ;
+        color: white;
+        font-size: 18px;
+        box-shadow: 0px 11px 6px 1px rgba(0,0,0,0.5);
+        width: 95%;
+        border-radius: 8px;
+        font-size: inherit;
+    }
+    #termsofservice {
+        color:hsl(246, 25%, 77%);
+        font-size: 14px;   
+        text-align: center;
+        padding: 10px 20px;
+    }
+    ::placeholder {
+        color: hsl(249, 10%, 26%) ;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align:flex-start;
+    }
+
+    span{
+       color: hsl(0, 100%, 74%);
+    }
+
+
+    @media  screen and (min-width:1440px ) {
+        div.content{
+            padding-right: 15px;
+        }
+
+        input[type=submit] input[type=email], input[type=text], input[type=password] {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 16px;
+        }
+        
+    }
+
+    @media screen and (max-width:375px) {
+        body.container{
+            background-image: url(images/bg-intro-mobile.png);
+            display: flex;
+            flex-direction: column;  
+            height: 100vh;
+            width: 100%;
+            flex-shrink: inherit;
+            padding: 25px 15px;
+        }
+        div.content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            text-align:center;
+            flex-shrink: 15;
+            font-size: 10px;
+            
+            
+        }
+     h1.content{
+         display: flex;
+         flex-shrink: 5;
+         font-size: 18px;
+        ;
+     }
+     p.content{
+         display: flex;
+         flex-shrink: 5;
+         font-size: 12px;
+         line-height: 1.5;
+     }
+
+    div.create-account{
+        display: flex;
+        flex-shrink: 15;
+        flex-direction: column;
+       
+       
+    }
+    div.subscription-bar{
+        display: flex;
+        flex-shrink: 10;
+        flex-direction: column;
+        }
+
+    p.subscription-bar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0%;
+        width: 100%;   
+    }
+    div.sign-up-form{
+        display: flex;
+        flex-shrink: 10;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;  
+       }
+      
+       }
+       input.input-box{
+           display: flex;
+           text-align: left;
+           padding: px;
+           justify-content: center;
+       }
+
+       input[type=email], input[type=text], input[type=password] {
+           width: 88%;
+       }
+       input[type= submit]{
+           width: 88%;
+       }
+ }
+ 
